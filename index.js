@@ -12,7 +12,7 @@ function addList() {
   const todo = {
     content: text
   }
-  if (text === '') {
+  if (text === '' || text.trim().length === 0) {
     alert('請輸入內容...');
   }else {
     data.push(todo);
